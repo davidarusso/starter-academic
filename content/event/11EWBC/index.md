@@ -1,17 +1,17 @@
 ---
-title: Exploring cyanobacterial secretion for ecology and biotechnology
+title: Deciphering the role of type IV pili in cyanobacterial secretion
 
-event: AlgaEurope 2020
-event_url: https://algaeurope.org/conference-program-2020/
+event: 11th European Workshop on the Biology of Cyanobacteria
+event_url: http://11ewbc.i3s.up.pt/
 
 location: Online
 
-summary: Flash Talk AlgaEurope 2020
+summary: Selected Lecture 11EWBC
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2020-12-03T16:40:00Z"
+date: "2020-09-08T16:40:00Z"
 all_day: true
 
 # Schedule page publish date (NOT talk date).

@@ -7,7 +7,7 @@ widget: experience
 headless: true
 
 # Order that this section appears on the page.
-weight: 40
+weight: 30
 
 title: Experience
 subtitle:
@@ -34,7 +34,7 @@ experience:
     company_url: ''
     location: Germany
     date_start: '2019-07-01'
-    date_end: ''
+    date_end: '2021-01-31'
   
   - title: Postdoc
     company: University of Copenhagen
