@@ -1,12 +1,12 @@
 ---
-title: AlgaEurope 2020
+title: Exploring cyanobacterial secretion for ecology and biotechnology
 
 event: AlgaEurope 2020
 event_url: https://algaeurope.org/conference-program-2020/
 
 location: Online
 
-summary: Young Algaeneer's Corner Flash Talk
+summary: Flash Talk AlgaEurope 2020
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.

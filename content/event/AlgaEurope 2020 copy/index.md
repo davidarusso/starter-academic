@@ -1,12 +1,12 @@
 ---
-title: 11th European Workshop on the Biology of Cyanobacteria
+title: Deciphering the role of type IV pili in cyanobacterial secretion
 
 event: 11th European Workshop on the Biology of Cyanobacteria
 event_url: http://11ewbc.i3s.up.pt/
 
 location: Online
 
-summary: Selected lecture
+summary: Selected lecture 11EWBC
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.
