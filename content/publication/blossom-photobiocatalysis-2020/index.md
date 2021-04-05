@@ -7,7 +7,7 @@ subtitle: ''
 summary: ''
 authors:
 - Benedikt M. Blossom
-- David A Russo
+- David A. Russo
 - Raushan Kumar Singh
 - Bart van Oort
 - Malene Billeskov Keller
