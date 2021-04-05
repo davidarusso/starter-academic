@@ -1,4 +1,5 @@
 ---
+active: false
 title: Exploring cyanobacterial secretion for ecology and biotechnology
 
 event: AlgaEurope 2020

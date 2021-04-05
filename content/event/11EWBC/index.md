@@ -1,4 +1,5 @@
 ---
+active: false
 title: Deciphering the role of type IV pili in cyanobacterial secretion
 
 event: 11th European Workshop on the Biology of Cyanobacteria
