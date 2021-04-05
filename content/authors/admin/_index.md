@@ -76,4 +76,6 @@ highlight_name: false
 
 The activity at the cyanobacterial cell surface has been shown to underpin fundamental processes such as motility, competency, biofilm formation, cell-to-cell communication and chemotaxis. With a mix of molecular biology, proteomics and metabolomics I aim to obtain a better understanding of the cyanobacterial extracellular environment and symbiotic lifestyle. This will also contribute to the development of novel biotechnological applications in the fields of secretion, synthetic microbial ecology and catalytic biofilms.
 
+Keywords: cyanobacteria, secretion, proteomics, metabolomics, photosynthetic biotechnology
+
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
