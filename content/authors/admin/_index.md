@@ -14,14 +14,14 @@ organizations:
   url: https://www.uni-jena.de/en
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include protein and metabolite secretion in cyanobacteria and photosynthetic biotechnology.
 
 # Interests to show in About widget
-interests:
-- Cyanobacteria
-- Secretion
-- Microbial ecology
-- Biotechnology
+# interests:
+# - Cyanobacteria
+# - Secretion
+# - Microbial ecology
+# - Biotechnology
 
 # Education to show in About widget
 education:
@@ -76,6 +76,6 @@ highlight_name: false
 
 The activity at the cyanobacterial cell surface has been shown to underpin fundamental processes such as motility, competency, biofilm formation, cell-to-cell communication and chemotaxis. With a mix of molecular biology, proteomics and metabolomics I aim to obtain a better understanding of the cyanobacterial extracellular environment and symbiotic lifestyle. This will also contribute to the development of novel biotechnological applications in the fields of secretion, synthetic microbial ecology and catalytic biofilms.
 
-Keywords: cyanobacteria, secretion, proteomics, metabolomics, photosynthetic biotechnology
+**Keywords**: cyanobacteria, secretion, proteomics, metabolomics, photosynthetic biotechnology
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

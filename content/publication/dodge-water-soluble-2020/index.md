@@ -1,8 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Water-soluble chlorophyll-binding proteins from Brassica oleracea allow for
-  stable photobiocatalytic oxidation of cellulose by a lytic polysaccharide monooxygenase
+title: Water-soluble chlorophyll-binding proteins from Brassica oleracea allow for stable photobiocatalytic oxidation of cellulose by a lytic polysaccharide monooxygenase
 subtitle: ''
 summary: ''
 authors:
@@ -38,14 +37,14 @@ projects: []
 publishDate: '2021-04-05T17:53:14.468932Z'
 publication_types:
 - '2'
-abstract: Background:  Lytic polysaccharide monooxygenases (LPMOs) are indispensable
+abstract: Background: Lytic polysaccharide monooxygenases (LPMOs) are indispensable
   redox enzymes used in industry for the saccharification of plant biomass. LPMO-driven
   cellulose oxidation can be enhanced considerably through photobiocatalysis using
   chlorophyll derivatives and light. Water soluble chlorophyll binding proteins (WSCPs)
   make it is possible to stabilize and solubilize chlorophyll in aqueous solution,
   allowing for in vitro studies on photostability and ROS production. Here we aim
   to apply WSCP–Chl a as a photosensitizing complex for photobiocatalysis with the
-  LPMO, TtAA9. Results:  We have in this study demonstrated how WSCP reconstituted
+  LPMO, TtAA9. Results: We have in this study demonstrated how WSCP reconstituted
   with chlorophyll a (WSCP–Chl a) can create a stable photosensitizing complex which
   produces controlled amounts of ­H2O2 in the presence of ascorbic acid and light.
   WSCP–Chl a is highly reactive and allows for tightly controlled formation of ­H2O2
@@ -53,7 +52,7 @@ abstract: Background:  Lytic polysaccharide monooxygenases (LPMOs) are indispe
   oxidation under low light conditions, and the WSCP–Chl a complex remains stable
   after 24 h of light exposure. Additionally, the WSCP–Chl a complex demonstrates
   stability over a range of temperatures and pH conditions relevant for enzyme activity
-  in industrial settings. Conclusion:  With WSCP–Chl a as the photosensitizer, the
+  in industrial settings. Conclusion: With WSCP–Chl a as the photosensitizer, the
   need to replenish Chl is greatly reduced, enhancing the catalytic lifetime of light-driven
   LPMOs and increasing the efficiency of cellulose depolymerization. WSCP–Chl a allows
   for stable photobiocatalysis providing a sustainable solution for biomass processing.
