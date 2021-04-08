@@ -74,8 +74,8 @@ email: ""
 highlight_name: false
 ---
 
-The activity at the cyanobacterial cell surface has been shown to underpin fundamental processes such as motility, competency, biofilm formation, cell-to-cell communication and chemotaxis. With a mix of molecular biology, proteomics and metabolomics I aim to obtain a better understanding of the cyanobacterial extracellular environment and symbiotic lifestyle. This will also contribute to the development of novel biotechnological applications in the fields of secretion, synthetic microbial ecology and catalytic biofilms.
+My name is David A. Russo and I am currently an Alexander von Humboldt Research fellow in the [lab of Prof. Georg Pohnert](https://www.chemgeo.uni-jena.de/en/pohnertgroup) at the University of Jena. The focus of my research is on **how cyanobacteria use extracellular mechanisms to shape their environment and associated microbiome**.
 
-**Keywords**: cyanobacteria, secretion, proteomics, metabolomics, photosynthetic biotechnology
+**Keywords**: cyanobacteria • secretion • proteomics • metabolomics • photosynthetic biotechnology
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
