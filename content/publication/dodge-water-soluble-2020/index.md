@@ -37,7 +37,7 @@ projects: []
 publishDate: '2021-04-05T17:53:14.468932Z'
 publication_types:
 - '2'
-abstract: Background: Lytic polysaccharide monooxygenases (LPMOs) are indispensable
+abstract: $\textbf{Background}$ Lytic polysaccharide monooxygenases (LPMOs) are indispensable
   redox enzymes used in industry for the saccharification of plant biomass. LPMO-driven
   cellulose oxidation can be enhanced considerably through photobiocatalysis using
   chlorophyll derivatives and light. Water soluble chlorophyll binding proteins (WSCPs)
