@@ -44,7 +44,7 @@ abstract: $\textbf{Background}$ Lytic polysaccharide monooxygenases (LPMOs) ar
   make it is possible to stabilize and solubilize chlorophyll in aqueous solution,
   allowing for in vitro studies on photostability and ROS production. Here we aim
   to apply WSCP–Chl a as a photosensitizing complex for photobiocatalysis with the
-  LPMO, TtAA9. Results: We have in this study demonstrated how WSCP reconstituted
+  LPMO, TtAA9. $\textbf{Results}$ We have in this study demonstrated how WSCP reconstituted
   with chlorophyll a (WSCP–Chl a) can create a stable photosensitizing complex which
   produces controlled amounts of ­H2O2 in the presence of ascorbic acid and light.
   WSCP–Chl a is highly reactive and allows for tightly controlled formation of ­H2O2
@@ -52,7 +52,7 @@ abstract: $\textbf{Background}$ Lytic polysaccharide monooxygenases (LPMOs) ar
   oxidation under low light conditions, and the WSCP–Chl a complex remains stable
   after 24 h of light exposure. Additionally, the WSCP–Chl a complex demonstrates
   stability over a range of temperatures and pH conditions relevant for enzyme activity
-  in industrial settings. Conclusion: With WSCP–Chl a as the photosensitizer, the
+  in industrial settings. $\textbf{Conclusion}$ With WSCP–Chl a as the photosensitizer, the
   need to replenish Chl is greatly reduced, enhancing the catalytic lifetime of light-driven
   LPMOs and increasing the efficiency of cellulose depolymerization. WSCP–Chl a allows
   for stable photobiocatalysis providing a sustainable solution for biomass processing.
