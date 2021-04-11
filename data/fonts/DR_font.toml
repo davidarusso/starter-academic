@@ -1,8 +1,8 @@
 # Font style metadata
-name = "Minimal"
+name = "DR_font"
 
 # Optional Google font URL
-google_fonts = "family=family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700"
+google_fonts = "family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,700;1,400;1,700"
 
 # Font families
 heading_font = "Montserrat"

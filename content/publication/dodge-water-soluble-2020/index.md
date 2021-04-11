@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Water-soluble chlorophyll-binding proteins from Brassica oleracea allow for stable photobiocatalytic oxidation of cellulose by a lytic polysaccharide monooxygenase
+title: Water-soluble chlorophyll-binding proteins from $\textsf{$\textit{Brassica oleracea}$}$ allow for stable photobiocatalytic oxidation of cellulose by a lytic polysaccharide monooxygenase
 subtitle: ''
 summary: ''
 authors:
