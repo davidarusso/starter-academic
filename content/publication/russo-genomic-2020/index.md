@@ -3,7 +3,7 @@
 
 title: Genomic insights into cyanobacterial protein translocation systems
 subtitle: ''
-summary: ''
+summary: 'In this review we provide insights into the known knowns of protein targeting, propose new hypotheses based on available genomic sequences and discuss future directions of protein secretion in cyanobacteria.'
 authors:
 - David A. Russo
 - Julie A. Z. Zedler
@@ -11,7 +11,7 @@ tags: []
 categories: []
 date: '2020-10-01'
 lastmod: 2021-04-05T19:53:14+02:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
