@@ -40,7 +40,7 @@ projects: []
 publishDate: '2021-04-05T17:53:13.836712Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'Lytic polysaccharide monooxygenases (LPMOs) are copper‐containing enzymes capable of oxidizing crystalline cellulose which have large practical application in the process of refining biomass. The catalytic mechanism of LPMOs still remains debated despite several proposed reaction mechanisms. Here, we report a long‐lived intermediate (t<sub>1/2</sub>=6–8 minutes) observed in an LPMO from *Thermoascus aurantiacus* (*Ta*LPMO9A). The intermediate with a strong absorption around 420 nm is formed when reduced LPMO‐Cu<sub>I</sub> reacts with sub‐equimolar amounts of H<sub>2</sub>O<sub>2</sub>. UV/Vis absorption spectroscopy, electron paramagnetic resonance, resonance Raman and stopped‐flow spectroscopy suggest that the observed long‐lived intermediate involves the copper center and a nearby tyrosine (Tyr175). Additionally, activity assays in the presence of sub‐equimolar amounts of H<sub>2</sub>O<sub>2</sub> showed an increase in the LPMO oxidation of phosphoric acid swollen cellulose. Accordingly, this suggests that the long‐lived copper‐dependent intermediate could be part of the catalytic mechanism for LPMOs. The observed intermediate offers a new perspective into the oxidative reaction mechanism of *Ta*LPMO9A and hence for the biomass oxidation and the reactivity of copper in biological systems.'
 publication: '*Chemistry – A European Journal*'
 url_pdf: https://onlinelibrary.wiley.com/doi/abs/10.1002/chem.201903562
 doi: 10.1002/chem.201903562
