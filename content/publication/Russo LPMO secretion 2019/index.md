@@ -37,7 +37,7 @@ Two variations of *Tf*AA10A were successfully expressed in *S. elongatus* UTEX 2
 We have shown for the first time high-titer expression and secretion of an industrially relevant and catalytically active enzyme in *S. elongatus* UTEX 2973. This proof-of-concept study will be valuable for the development of novel and sustainable applications in the fields of bioremediation and biocatalysis.'
 
 # Summary. An optional shortened abstract.
-summary: Bla bla bla
+summary: 'In this work we show that a lytic polysaccharide monooxygenase can be fully secreted to the medium by *S. elongatus* UTEX 2973'
 
 tags: []
 
