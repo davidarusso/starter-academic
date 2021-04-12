@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #1b1f22; -webkit-text-stroke: #1b1f22}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 20.0px; font: 12.0px Consolas; color: #1b1f22; -webkit-text-stroke: #1b1f22; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #1b1f22; -webkit-text-stroke: #1b1f22; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    table.t1 {background-color: #ffffff; border-collapse: collapse}
+    td.td1 {width: 125.6px; padding: 0.0px 10.0px 0.0px 10.0px}
+    td.td2 {width: 125.6px; min-width: 50.0px; padding: 0.0px 10.0px 0.0px 10.0px}
+    td.td3 {width: 1036.0px; padding: 0.0px 10.0px 0.0px 10.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p1"><span class="s1">{{ $page := . }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ $featured := (.Resources.ByType "image").GetMatch "*featured*" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ $anchor := $page.Params.image.focal_point | default "Smart" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{/* Set default titles for node pages */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ $title := .Title }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ if and (not $title) .IsNode }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ if eq .Type "post" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $title = i18n "posts" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ else if eq .Type "event" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $title = i18n "talks" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ else if eq .Type "publication" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $title = i18n "publications" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{/* Header image */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ if and .Params.header.image (not (and $featured (not .Params.image.preview_only))) }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;div class="article-header"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{- $img := "" -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $alt := (.Params.header.caption | default "") | plainify }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $destination := .Params.header.image }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $is_remote := strings.HasPrefix $destination "http" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{- if not $is_remote -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{- $img = (.Page.Resources.ByType "image").GetMatch $destination -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{- if not $img -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{- $img = resources.Get (path.Join "media" $destination) -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{- end -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{- end -}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ if $img }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="{{$img.RelPermalink}}" class="article-banner" alt="{{$alt}}"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ else }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="{{ .Params.header.image }}" class="article-banner" alt="{{$alt}}"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ end }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ with .Params.header.caption }}&lt;span class="article-header-caption"&gt;{{ . | markdownify | emojify }}&lt;/span&gt;{{ end }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{/* Featured image layout */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ if and $featured (not .Params.image.preview_only) }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{/* Fit image within max size. */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ $image := $featured }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{/* Determine image placement. */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ $placement := .Params.image.placement | default 1 }}{{/* Default to full column width. */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ $image_container := "" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{ if eq $placement 2}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $image_container = "container" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ if gt $featured.Width 1200 }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $image = $featured.Resize "1200x" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ end }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{else if eq $placement 3}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $image_container = "container-fluid" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $image := $featured.Fit "2560x2560" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{else}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $image_container = "article-container" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ if gt $featured.Width 720 }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $image = $featured.Resize "720x" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ end }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;div class="article-container pt-3"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1&gt;{{ $title | markdownify }}&lt;/h1&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ with $page.Params.subtitle }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p class="page-subtitle"&gt;{{ . | markdownify | emojify }}&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ partial "page_links_div.html" $page }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{/* Featured image */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;div class="article-header {{$image_container}} featured-image-wrapper mt-4 mb-4" style="max-width: {{$image.Width}}px; max-height: {{$image.Height}}px;"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div style="position: relative"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="{{ $image.RelPermalink }}" alt="{{ with $.Params.image.alt_text }}{{.}}{{ end }}" class="featured-image"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ with $.Params.image.caption }}&lt;span class="article-header-caption"&gt;{{ . | markdownify | emojify }}&lt;/span&gt;{{ end }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{else}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{/* Case when page has no image */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{/* Wider container for nodes */}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $ctnr := "article-container" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ if $page.IsNode }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $ctnr = "universal-wrapper" }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;div class="{{$ctnr}} pt-3"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1&gt;{{ $title }}&lt;/h1&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ with $page.Params.subtitle }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p class="page-subtitle"&gt;{{ . | markdownify | emojify }}&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s1"></span><br></p>
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ if not .IsNode }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ partial "page_links_div.html" $page }}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{end}}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1">{{end}}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
