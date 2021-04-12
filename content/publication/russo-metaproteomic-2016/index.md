@@ -10,13 +10,7 @@ authors:
 - Narciso Couto
 - Andrew P. Beckerman
 - Jagroop Pandhal
-tags:
-- '"algae"'
-- '"eutrophic"'
-- '"freshwater"'
-- '"Metaproteomics"'
-- '"Microbial loop"'
-- '"oligotrophic"'
+tags: []
 categories: []
 date: '2016-08-01'
 lastmod: 2021-04-05T19:53:12+02:00

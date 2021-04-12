@@ -45,7 +45,7 @@ abstract:
   make it is possible to stabilize and solubilize chlorophyll in aqueous solution,
   allowing for in vitro studies on photostability and ROS production. Here we aim
   to apply WSCP–Chl *a* as a photosensitizing complex for photobiocatalysis with the
-  LPMO, TtAA9. **Results** We have in this study demonstrated how WSCP reconstituted
+  LPMO, *Tt*AA9. **Results** We have in this study demonstrated how WSCP reconstituted
   with chlorophyll a (WSCP–Chl *a*) can create a stable photosensitizing complex which
   produces controlled amounts of ­H<sub>2</sub>O<sub>2</sub> in the presence of ascorbic acid and light.
   WSCP–Chl *a* is highly reactive and allows for tightly controlled formation of H<sub>2</sub>O<sub>2</sub>
