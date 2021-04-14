@@ -1,5 +1,5 @@
 # Theme metadata
-name = "minimalDR"
+name = "drtheme"
 
 # Is theme light or dark?
 light = true
@@ -8,11 +8,11 @@ light = true
 primary = "#1565c0" #colour of links and icons
 
 # Menu
-menu_primary = "#fff" #website header colour
+menu_primary = "rgb(158, 200, 179)" #website header colour
 menu_text = "#34495e" #website header menu 
 menu_text_active = "#2962ff" #website header menu home
 menu_title = "#2b2b2b" #website title David A. Russo
 
 # Home sections
 home_section_odd = "rgb(255, 255, 255)" #alternating section colour
-home_section_even = "rgb(247, 247, 247)" #alternating section colour
+home_section_even = "rgb(178, 200, 158)" #alternating section colour
