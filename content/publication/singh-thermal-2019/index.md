@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: 'Thermal unfolding and refolding of a lytic polysaccharide monooxygenase from Thermoascus aurantiacus'
+title: 'Thermal unfolding and refolding of a lytic polysaccharide monooxygenase from $\textit{Thermoascus aurantiacus}$'
 subtitle: ''
 summary: ''
 authors:

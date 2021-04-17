@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Competitive growth experiments with a high-lipid Chlamydomonas reinhardtii
+title: Competitive growth experiments with a high-lipid $\textit{Chlamydomonas reinhardtii}$
   mutant strain and its wild-type to predict industrial and ecological risks
 subtitle: ''
 summary: ''
