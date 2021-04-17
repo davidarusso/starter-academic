@@ -8,10 +8,10 @@ light = true
 primary = "rgb(71, 101, 116)" #colour of links and icons
 
 # Menu
-menu_primary = "rgb(19, 27, 41)" #website header colour "rgb(158, 200, 179)" light green
+menu_primary = "rgb(19, 27, 41)" #website header colour
 menu_text = "rgb(71, 175, 116)" #website header menu 
 menu_text_active = "rgb(161, 41, 40)" #website header menu home
-menu_title = "rgb(71, 175, 116)" #website title David A. Russo #2b2b2b
+menu_title = "rgb(71, 175, 116)" #website title David A. Russo
 
 # Home sections
 home_section_odd = "rgb(236, 234, 233)" #alternating section colour
